@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JhonatanTech</title>
+
+    <!-- FaviIcon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+
+    <!-- Menu -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</head>
+<body>
+        
+    <div class="container">
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="img/menu.svg" alt="Menu" class="menu-hamburg">
+            </label>
+            <img src="img/logo.jpg" alt="Logo" class="logo">
+            <ul>
+                <li><a href="#eletrica" onclick='desabilita()'>Elétrica</a></li>
+                <li><a href="#pintura" onclick='desabilita()'>Pintura</a></li>
+                <li><a href="#hidraulica" onclick='desabilita()'>HIDRÁULICA</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-slider disable">
+            <div class="text-content" id="portfolio">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="img/img-slide/slide1.jpg" style="width:100%">
+                        <div class="carousel-caption d-none d-md-block">
+                </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/img-slide/slide2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/img-slide/slide3.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content-bg">
+        <div class="container">
+            <div class="content">
+                <div class="text-content" id="eletrica">
+                    <h1>Serviço de Elétrica</h1>
+                    <p>Troca de lâmpadas, reatores, fiação, serviços de todas 
+as espécies.</p>
+                </div>
+                <div class="img-content disable">
+                    <img src="img/eletr1.jpg" alt="Jovem mexendo em notebook" class="img">
+                </div >
+            </div>
+        </div>
+    </div>
+
+    <div class="content-bg">
+        <div class="container">
+            <div class="content">
+                <div class="text-content" id="pintura">
+                    <h1>Serviço de Pintura</h1>
+                    <p>Pintura de salas de aula, lousas, portas, portões, 
+grades de proteção, quadras esportivas, parques, Areografia e 
+Grafitagem.
+</p>
+                </div>
+                <div class="img-content disable">
+                    <img src="img/pintor1.jpg" alt="Notebook" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-bg">
+        <div class="container">
+            <div class="content">
+                <div class="text-content" id="hidraulica">
+                    <h1>Serviços de Hidráulica</h1>
+                    <p>Troca de válvulas ou reparo, conserto de 
+vazamento de qualquer espécie, troca de torneiras, troca de vasos 
+sanitários, troca de registro, troca de sifão, impermeabilização de caixa de 
+água, reservatório e lajes.</p>
+                </div>
+                <div class="img-content disable">
+                    <img src="img/hidro1.jpg" alt="Notebook" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="links">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/jhonatantech/" target="_blank">
+                    <img src="img/icon_linkedin.svg" alt="linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/JhonatanTech" target="_blank">
+                    <img src="img/icon_github.svg" alt="github">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.figma.com/@jhonatantech" target="_blank">
+                    <img src="img/icon_figma.svg" alt="figma">
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=5511948410992" target="_blank">
+                    <img src="img/icon_whats.svg" alt="whatsapp">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="img/icon_email.svg" alt="Email">
+                    <p>jhonatancarvalhotorres12@gmail.com</p>
+                </li>
+                <li>
+                    <img src="img/icon_phone.svg" alt="Celular">
+                    <p>+55 (11)94841-0992</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+
+    <script type="text/javascript">
+    window._mfq = window._mfq || [];
+    (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript"; mf.defer = true;
+        mf.src = "//cdn.mouseflow.com/projects/867c1012-97ec-4f4c-ab36-e787383d2e81.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+    })();
+    </script>
+</body>
+</html>
